@@ -15,14 +15,15 @@ promise high quality and low maintenance, but are often too costly to follow:
 📖 Read the introduction: [Why I'm Building the World's Most Tested "Hello World"](LINK)
 
 ## Quick start
-​```bash
+
+```sh
 gem install greeter-core
 # CLI
 greeter greet --name Ada
 # HTTP
 curl -X POST https://API_URL/greetings \
   -H "Idempotency-Key: $(uuidgen)" -d '{"name":"Ada"}'
-​```
+```
 
 ## Architecture
 (keep your existing Mermaid diagram and "How it fits together")
