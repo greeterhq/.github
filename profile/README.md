@@ -26,7 +26,31 @@ curl -X POST https://API_URL/greetings \
 ```
 
 ## Architecture
-(keep your existing Mermaid diagram and "How it fits together")
+```mermaid
+flowchart TD
+    subgraph core["greeter-core (gem)"]
+        D["Domain: GreetingService, GuestName<br/>Ports: Clock, GreetingPresenter"]
+    end
+
+    subgraph cli["greeter-cli"]
+        C["Command-line client"]
+    end
+
+    subgraph http["greeter-http"]
+        H["Lambda handler → Rack app<br/>application / ports / adapters"]
+    end
+
+    AG["API Gateway (HTTP API)"]
+    DB[("DynamoDB<br/>per-guest counts + idempotency")]
+
+    C -->|composes| core
+    H -->|composes| core
+    AG -->|POST /greetings| H
+    H -->|GetItem / Put / Update| DB
+
+    classDef gem fill:#eef,stroke:#88a
+    class core gem
+```
 
 ## Repositories
 | Repo | What it is | Status |
