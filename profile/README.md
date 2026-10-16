@@ -56,9 +56,9 @@ flowchart TD
 ## Repositories
 | Repo | What it is | Status |
 |--|--|--|
-| [greeter-core](https://github.com/greeterhq/greeter-core) | Pure Ruby domain core, no I/O. Published on RubyGems. | ![CI](BADGE) ![Gem](BADGE) |
-| [greeter-cli](https://github.com/greeterhq/greeter-cli) | Command-line client composing greeter-core | ![CI](BADGE) |
-| [greeter-http](https://github.com/greeterhq/greeter-http) | AWS Lambda + API Gateway + DynamoDB, idempotent per-guest counts | ![CI](BADGE) |
+| [greeter-core](https://github.com/greeterhq/greeter-core) | Pure Ruby domain core, no I/O. Published on RubyGems. | [![CI](https://github.com/greeterhq/greeter-core/actions/workflows/ci.yml/badge.svg)](https://github.com/greeterhq/greeter-core/actions/workflows/ci.yml) [![Gem](https://img.shields.io/gem/v/greeter-core)](https://rubygems.org/gems/greeter-core) |
+| [greeter-cli](https://github.com/greeterhq/greeter-cli) | Command-line client composing greeter-core | [![CI](https://github.com/greeterhq/greeter-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/greeterhq/greeter-cli/actions/workflows/ci.yml) |
+| [greeter-http](https://github.com/greeterhq/greeter-http) | AWS Lambda + API Gateway + DynamoDB, idempotent per-guest counts | [![CI](https://github.com/greeterhq/greeter-http/actions/workflows/ci.yml/badge.svg)](https://github.com/greeterhq/greeter-http/actions/workflows/ci.yml) |
 
 ## Testing strategy
 | Layer | Tooling | Status |
