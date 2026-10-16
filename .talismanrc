@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: profile/README.md
+  checksum: 203b55cf30e171f26130b88a33a838533db23030ea29fad9dcca61d32b26717c
+version: ""
