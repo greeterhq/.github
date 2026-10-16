@@ -17,6 +17,7 @@ promise high quality and low maintenance, but are often too costly to follow:
 ## Quick start
 
 ```sh
+# CORE
 gem install greeter-core
 # CLI
 greeter greet --name Ada
