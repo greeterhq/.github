@@ -73,8 +73,23 @@ flowchart TD
 | Observability | OpenTelemetry | 🔜 |
 
 ## Live documentation
-Specs live in [openspec/](LINK). Flow:
-stakeholder + requirements agent → spec → code-generating agents → tests → CI.
+
+Each repository owns its specs, kept in OpenSpec alongside the code they describe.
+Specs are the single source of truth: they steer the AI agents, and they change
+with every feature.
+
+| Repo | Current specs (source of truth) | Changes in progress | Change history |
+|--|--|--|--|
+| greeter-core | [specs](https://github.com/greeterhq/greeter-core/tree/main/openspec/specs) | [changes](https://github.com/greeterhq/greeter-core/tree/main/openspec/changes) | [archive](https://github.com/greeterhq/greeter-core/tree/main/openspec/changes/archive) |
+| greeter-cli | [specs](https://github.com/greeterhq/greeter-cli/tree/main/openspec/specs) | [changes](https://github.com/greeterhq/greeter-cli/tree/main/openspec/changes) | [archive](https://github.com/greeterhq/greeter-cli/tree/main/openspec/changes/archive) |
+| greeter-http | [specs](https://github.com/greeterhq/greeter-http/tree/main/openspec/specs) | [changes](https://github.com/greeterhq/greeter-http/tree/main/openspec/changes) | [archive](https://github.com/greeterhq/greeter-http/tree/main/openspec/changes/archive) |
+
+**How a change flows:**
+stakeholder + requirements agent → change proposal (`openspec/changes/`) →
+code-generating agents → tests → CI → spec merged into `openspec/specs/` and the change archived.
+
+**Where to start:** read [greeter-core's specs](https://github.com/greeterhq/greeter-core/tree/main/openspec/specs)
+for the domain rules, then the adapter specs for how the CLI and HTTP API expose them.
 
 ## Follow along
 Weekly posts on what I built, what broke and what I learned:
