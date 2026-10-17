@@ -93,4 +93,5 @@ for the domain rules, then the adapter specs for how the CLI and HTTP API expose
 
 ## Follow along
 Weekly posts on what I built, what broke and what I learned:
-[LinkedIn](LINK) · Built by Adam Bonsu, SC-cleared Test Lead.
+[follow the series on LinkedIn](https://www.linkedin.com/in/adambonsu/recent-activity/all/)
+· Built by [Adam Bonsu](https://www.linkedin.com/in/adambonsu/), SC-cleared Test Lead.
